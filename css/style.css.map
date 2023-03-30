@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sources":["../sass/_settings.sass","style.css","../sass/blocks/_header.sass"],"names":[],"mappings":"AAAA;EACC,sBAAA;ACCD;;ADAA;EACC,+BAAA;ACGD;;ACNA;EACC,sBAAA;ADSD","file":"style.css"}
