@@ -17,6 +17,8 @@
 		&__search
 			margin-right: auto
 			margin-left: auto
+	.search
+		&__input
 			max-width: 340px
 @media (max-width: 768px)
 	.container
@@ -25,21 +27,22 @@
 	.navbar
 		&__search, &-menu, &__user
 			display: none
-.menu
-	&-button
-		width: 16px
-		height: 11px
-		display: flex
-		align-items: center
-		justify-content: space-between
-		flex-direction: column
-		border: none
-		background-color: #fff
-		cursor: pointer
-		&__line
+	.menu
+		&-button
 			width: 16px
-			height: 1px
-			background-color: $text-color
+			height: 11px
+			padding: 0
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-direction: column
+			border: none
+			background-color: #fff
+			cursor: pointer
+			&__line
+				width: 16px
+				height: 1px
+				background-color: $text-color
 @media (max-width: 576px)
 	.logo
 		width: 99px

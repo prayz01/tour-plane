@@ -336,12 +336,12 @@ template {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.navbar-top__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-.navbar__menu-button {
-  display: none;
 }
 .navbar-bottom {
   background-color: #0A223D;
@@ -364,7 +364,7 @@ template {
 }
 
 .logo {
-  maxw: 177px;
+  max-width: 177px;
 }
 
 .search {
@@ -415,10 +415,6 @@ template {
   margin-left: 18px;
 }
 
-.menu-button {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -444,6 +440,8 @@ template {
   .navbar__search {
     margin-right: auto;
     margin-left: auto;
+  }
+  .search__input {
     max-width: 340px;
   }
 }
@@ -455,24 +453,24 @@ template {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
+  .menu-button {
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
 }
-.menu-button {
-  width: 16px;
-  height: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  border: none;
-  background-color: #fff;
-  cursor: pointer;
-}
-.menu-button__line {
-  width: 16px;
-  height: 1px;
-  background-color: #333333;
-}
-
 @media (max-width: 576px) {
   .logo {
     width: 99px;
