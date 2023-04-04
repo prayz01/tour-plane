@@ -9,6 +9,7 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
+		padding-bottom: 20px
 		&__offer
 			margin-left: 14px
 		&__name
@@ -21,6 +22,7 @@
 		display: flex
 		flex-wrap: wrap
 		align-items: center
+	&-grid
 .stars
 	flex-basis: 100%
 .offer
@@ -44,3 +46,31 @@
 		font-style: Bold
 		font-size: 14px
 		line-height: 18px
+.swiper
+	position: relative
+	width: 728px
+	height: 450px
+	border-radius: 8px
+	&-wrapper
+		width: 728px
+.slider
+	width: 728px
+	&-button
+		position: absolute
+		top: 50%
+		transform: translateY(-50)
+		z-index: 9
+		width: 30px
+		height: 30px
+		border: none
+		cursor: pointer
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 10px
+		background-color: transparent
+		&--next
+			right: 18px
+			background-image: url(../img/Vector-right.svg)
+		&--prev
+			left: 18px
+			background-image: url(../img/Vector-left.svg)

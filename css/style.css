@@ -449,6 +449,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .hotel-info__offer {
   margin-left: 14px;
@@ -466,7 +467,6 @@ template {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .stars {
   flex-basis: 100%;
 }
@@ -496,6 +496,42 @@ template {
   font-style: Bold;
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper {
+  position: relative;
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+}
+.swiper-wrapper {
+  width: 728px;
+}
+
+.slider {
+  width: 728px;
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50);
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.slider-button--next {
+  right: 18px;
+  background-image: url(../img/Vector-right.svg);
+}
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/Vector-left.svg);
 }
 
 @media (max-width: 1200px) {
