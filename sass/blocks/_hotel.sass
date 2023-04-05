@@ -23,6 +23,13 @@
 		flex-wrap: wrap
 		align-items: center
 	&-grid
+		display: flex
+		justify-content: space-between
+		// align-items: flex-start
+	&-right
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 .stars
 	flex-basis: 100%
 .offer
@@ -52,7 +59,6 @@
 	height: 450px
 	border-radius: 8px
 	&-wrapper
-		width: 728px
 .slider
 	width: 728px
 	&-button
@@ -74,3 +80,81 @@
 		&--prev
 			left: 18px
 			background-image: url(../img/Vector-left.svg)
+.booking
+	border-radius: 8px
+	width: 350px
+	min-height: 210px
+	background-color: $dark
+	padding: 28px
+	color: $white
+	&__info
+		display: flex
+		justify-content: space-between
+		margin-bottom: 9px
+	&__price
+		display: flex
+		flex-direction: column
+	&__start
+		font-weight: normal
+		font-size: 10px
+		line-height: 14px
+	&__pricetag
+		font-style: ExtraBold
+		font-size: 24px
+		line-height: 33px
+	&__per-room
+		font-style: Regular
+		font-size: 12px
+		line-height: 16px
+	&__room
+		margin-top: 4px
+	&__text
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 8px
+		font-style: normal
+		font-weight: 400
+		font-size: 12px
+		line-height: 16px
+	&__description
+		margin-left: 9px
+.call-center
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 17px
+	&__text
+		font-style: normal
+		font-weight: 600
+		font-size: 18px
+		line-height: 25px
+	&__number
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-decoration: none
+		color: inherit
+		font-style: normal
+		font-weight: 600
+		font-size: 18px
+		line-height: 25px
+	&__num
+		margin-left: 8px
+.booking-button
+	// padding: 13px 84px
+	border: none
+	background-color: $primary
+	color: $white
+	border-radius: 4px
+	font-style: normal
+	font-weight: 600
+	font-size: 14px
+	line-height: 19px
+	width: 100%
+	min-height: 45px
+	cursor: pointer
+.map
+	width: 347px
+	height: 213px
+	// background-color: $primary
