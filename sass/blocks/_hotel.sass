@@ -46,6 +46,12 @@
 	border-radius: 4px
 	color: $white
 	text-align: center
+	box-shadow: 2px 2px 3px 2px #030305
+	transition: all .3s
+	&:hover
+		transform: scale(1.1)
+	&:active
+		box-shadow: 1px 1px 1px 1px #030305
 	&__text
 		font-size: 8px
 		line-height: 10px
@@ -83,9 +89,15 @@
 		&--next
 			right: 18px
 			background-image: url(../img/Vector-right.svg)
+			transition: all .3s
+		&:hover
+			transform: scale(1.1)
 		&--prev
 			left: 18px
 			background-image: url(../img/Vector-left.svg)
+			transition: all .3s
+		&:hover
+			transform: scale(1.1)
 .booking
 	border-radius: 8px
 	width: 350px
@@ -160,6 +172,12 @@
 	width: 100%
 	min-height: 45px
 	cursor: pointer
+	box-shadow: 2px 2px 3px 2px #030305
+	transition: all .3s
+	&:hover
+		transform: scale(1.1)
+	&:active
+		box-shadow: 1px 1px 1px 1px #030305
 .map
 	width: 347px
 	height: 213px
