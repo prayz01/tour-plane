@@ -683,8 +683,19 @@ template {
     height: 100%;
     width: 100%;
   }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews-slider__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .booking {
     margin-bottom: 10px;
+  }
+  .card {
+    height: 225px !important;
+    width: 225px !important;
   }
 }
 @media (max-width: 992px) {
@@ -727,11 +738,23 @@ template {
   .booking {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
   .map {
     width: 340px;
+  }
+  .activiteis-wrapper {
+    flex-wrap: wrap;
+  }
+  .card {
+    height: 225px;
+    width: 340px !important;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -823,6 +846,14 @@ template {
     transform: translate(-50%, 0) !important;
     margin-left: -65px !important;
   }
+  .card {
+    height: 225px;
+    width: 49% !important;
+  }
+  .activiteis {
+    pading-top: 40px;
+    pading-bottom: 60px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -840,6 +871,10 @@ template {
   }
   .subscribe {
     max-width: 280px;
+  }
+  .card {
+    height: 225px;
+    width: 90% !important;
   }
 }
 .newsletter {
@@ -1049,4 +1084,85 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+}
+
+.activiteis {
+  padding: 60px 0 98px 0;
+}
+.activiteis__title {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #0A223D;
+  margin-bottom: 57px;
+}
+.activiteis-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.activiteis .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 255px;
+  width: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+.activiteis .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.activiteis .card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.activiteis .card__title {
+  margin-top: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.activiteis .card__button {
+  background-color: #EC1F46;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  border: none;
+  padding: 7px 22px;
+  box-shadow: 2px 2px 3px 3px #030305;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.activiteis .card__button:hover {
+  background: #7b0b49;
+  transition: all 500ms ease;
+  transform: scale(1.1);
+}
+.activiteis .card__button:active {
+  box-shadow: 0px 1px 0px 1px #030305;
 }/*# sourceMappingURL=style.css.map */
