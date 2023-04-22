@@ -20,6 +20,9 @@
 	.card
 		height: 225px !important
 		width: 225px !important
+	.footer
+		&__input
+			flex-basis: 100% !important
 @media (max-width: 992px)
 	.container,
 	.newsletter-wrapper
@@ -68,6 +71,33 @@
 		height: 225px
 		width: 340px !important
 		margin-bottom: 20px
+	.footer
+		&-wrapper
+			grid-template-columns: repeat(6, 1fr)
+			grid-row-gap: 40px !important
+		&__additional
+			&-info
+				grid-column: span 2 !important
+		&__legal
+			grid-column: span 2 !important
+		&__logo
+			grid-column: span 2 !important
+			grid-row: 1 / 2 !important
+		&-social
+			&-network
+				grid-row: 1 / 2 !important
+				grid-column: span 4 !important
+				align-self: center !important
+		&__categories
+			grid-row: 2 /4 !important
+			grid-column: span 2 !important
+		&__contact
+			&-details
+				grid-column: span 5 !important
+				grid-row: 3 !important
+			&-form
+				grid-column: span 5 !important
+				grid-row: 4 !important
 @media (max-width: 768px)
 	.container
 		max-width: 700px
@@ -151,6 +181,33 @@
 	.activiteis
 		pading-top: 40px
 		pading-bottom: 60px
+	.footer
+		&-wrapper
+			grid-template-columns: 1fr !important
+		&__logo
+			grid-row: 1 !important
+			grid-column: 1 !important
+		&-social
+			&-network
+				grid-row: 2 !important
+				grid-column: 1 !important
+		&__additional
+			&-info
+				grid-row: 3 !important
+				grid-column: 1 !important
+		&__categories
+			grid-row: 4 !important
+			grid-column: 1 !important
+		&-legal
+			grid-row: 5 !important
+			grid-column: 1 !important
+		&__contact
+			&-details
+				grid-row: 6 !important
+				grid-column: 1 !important
+			&-form
+				grid-row: 7 !important
+				grid-column: 1 !important
 @media (max-width: 576px)
 	.logo
 		width: 99px
