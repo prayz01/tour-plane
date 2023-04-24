@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +26,7 @@
 						<img src="./img/search.svg" alt="icon: search" />
 					</button>
 				</form>
-				<a data-toggle="modal" data-href="#profile" href="#" class="user navbar__user navbar__user--mobile_hidden">
+				<a href="#" class="user navbar__user navbar__user--mobile_hidden">
 					<img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
 					<span class="user__name">Nathan</span>
 				</a>
@@ -52,12 +51,12 @@
 						<!-- /.user -->
 					</li>
 					<li class="navbar-menu__item navbar-menu__item--mobile_activ">
-						<form action="#" class="search navbar__search navbar__search--mobile_activ">
-							<input type="text" class="search__input" placeholder="Search Location" />
-							<button class="search__button">
-								<img src="./img/search.svg" alt="icon: search" />
-							</button>
-						</form>
+					<form action="#" class="search navbar__search navbar__search--mobile_activ">
+						<input type="text" class="search__input" placeholder="Search Location" />
+						<button class="search__button">
+							<img src="./img/search.svg" alt="icon: search" />
+						</button>
+					</form>
 					</li>
 					<li class="navbar-menu__item">
 						<a href="#" class="navbar-menu__link">All Deals</a>
@@ -125,7 +124,7 @@
 						Child Stays Free</p>
 				</div>
 				<!-- /.hotel-info__text -->
-				<div data-toggle="modal" class="rating hotel-info__rating">
+				<div class="rating hotel-info__rating">
 					<span class="rateng__text">User Rattings</span>
 					<span class="rateng__counter">4.5/5</span>
 				</div>
@@ -183,7 +182,7 @@
 							</a>
 						</div>
 						<!-- /.call-center -->
-						<button data-toggle="modal" class="button booking-button">View Other Options</button>
+						<button class="button booking-button">View Other Options</button>
 					</div>
 					<!-- /.booking -->
 					<div class="map">
@@ -226,70 +225,68 @@
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide">
-						<div class="reviews-slider__item">
-							<div class="reviews-slider__profile">
-								<img src="img/reviews-avatar.jpg" alt="icon: Megan Fox" class="reviews-slider__avatar">
-								<h3 class="reviews-slider__username">Megan Fox</h3>
-								<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-								<div class="reviews-slider__raiting">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-								</div>
-								<!--reviews-slider__raiting  -->
+				<div class="swiper-slide">
+					<div class="reviews-slider__item">
+						<div class="reviews-slider__profile">
+							<img src="img/reviews-avatar.jpg" alt="icon: Megan Fox" class="reviews-slider__avatar">
+							<h3 class="reviews-slider__username">Megan Fox</h3>
+							<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+							<div class="reviews-slider__raiting">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
 							</div>
-							<!-- reviews-slider__profile -->
-							<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and
-								polite.
-								They
-								welcome us very well. Issue was only
-								that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
-								gallery
-								which
-								were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
-								good as per
-								atmosphere, it is ver
-								y nearby most of the popular places but self location in a narrow street is not good. Overall it
-								was a good experience and could recommend.</p>
+							<!--reviews-slider__raiting  -->
 						</div>
-						<!-- reviews-slider__item -->
+						<!-- reviews-slider__profile -->
+						<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite.
+							They
+							welcome us very well. Issue was only
+							that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+							gallery
+							which
+							were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
+							good as per
+							atmosphere, it is ver
+							y nearby most of the popular places but self location in a narrow street is not good. Overall it
+							was a good experience and could recommend.</p>
 					</div>
-					<!-- .swiper-slide -->
-					<div class="swiper-slide">
-						<div class="reviews-slider__item">
-							<div class="reviews-slider__profile">
-								<img src="img/reviews-avatar.jpg" alt="icon: Megan Fox" class="reviews-slider__avatar">
-								<h3 class="reviews-slider__username">Megan Fox</h3>
-								<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-								<div class="reviews-slider__raiting">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-									<img src="/img/Star.svg" alt="star" class="star">
-								</div>
-								<!--reviews-slider__raiting  -->
+					<!-- reviews-slider__item -->
+				</div>
+				<!-- .swiper-slide -->
+				<div class="swiper-slide">
+					<div class="reviews-slider__item">
+						<div class="reviews-slider__profile">
+							<img src="img/reviews-avatar.jpg" alt="icon: Megan Fox" class="reviews-slider__avatar">
+							<h3 class="reviews-slider__username">Megan Fox</h3>
+							<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+							<div class="reviews-slider__raiting">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
+								<img src="/img/Star.svg" alt="star" class="star">
 							</div>
-							<!-- reviews-slider__profile -->
-							<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and
-								polite.
-								They
-								welcome us very well. Issue was only
-								that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
-								gallery
-								which
-								were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
-								good as per
-								atmosphere, it is ver
-								y nearby most of the popular places but self location in a narrow street is not good. Overall it
-								was a good experience and could recommend.</p>
+							<!--reviews-slider__raiting  -->
 						</div>
-						<!-- reviews-slider__item -->
+						<!-- reviews-slider__profile -->
+						<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite.
+							They
+							welcome us very well. Issue was only
+							that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+							gallery
+							which
+							were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
+							good as per
+							atmosphere, it is ver
+							y nearby most of the popular places but self location in a narrow street is not good. Overall it
+							was a good experience and could recommend.</p>
 					</div>
-					<!-- .swiper-slide -->
+					<!-- reviews-slider__item -->
+				</div>
+				<!-- .swiper-slide -->
 				</div>
 				<!-- /.swiper-wrapper -->
 				<!-- If we need navigation buttons -->
@@ -400,8 +397,7 @@
 						<li class="footer__li footer__li--contact">
 							<div class="footer__icon-wrapper"><img src="./img/location.svg" alt="" class="footer__icon"></div>
 							9748 Blossom Hill Rd
-							undefined Lansing, Idaho 68545 United States
-						</li>
+							undefined Lansing, Idaho 68545 United States</li>
 						<li class="footer__li footer__li--contact">
 							<div class="footer__icon-wrapper"><img src="./img/tell.svg" alt="" class="footer__icon"></div>
 							Tel (business hours) : 269 1500 <br>
@@ -410,8 +406,7 @@
 						</li>
 						<li class="footer__li footer__li--contact">
 							<div class="footer__icon-wrapper"><img src="./img/mail.svg" alt="" class="footer__icon"></div>
-							cherly.lawson@example.com
-						</li>
+							cherly.lawson@example.com</li>
 					</ul>
 				</div>
 				<!-- /.footer-contact-details -->
@@ -431,43 +426,7 @@
 		</div>
 		<!-- /.container -->
 	</footer>
-	<div class="modal" id="booking-modal">
-		<div class="modal__overlay"></div>
-		<div class="modal__dialog">
-			<a href="#" class="modal__close">
-				<img src="./img/close.svg" alt="icon: close">
-			</a>
-			<h3 class="modal__title">Booking</h3>
-			<form action="#" class="modal__form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*">
-				<input type="text" class="input modal__input" placeholder="Phone Number*">
-				<textarea cols="30" rows="10" class="modal__message" placeholder="Message"></textarea>
-				<button class="button modal__button" type="submit">Send</button>
-				<span class="modal__info">* Required Fields</span>
-			</form>
-		</div>
-		<!-- /modal__dialog -->
-	</div>
-	<!-- /modal -->
-	<div class="modal" id="profile">
-		<div class="modal__overlay"></div>
-		<div class="modal__dialog">
-			<a href="#" class="modal__close">
-				<img src="./img/close.svg" alt="icon: close">
-			</a>
-			<h3 class="modal__title">profile</h3>
-			<form action="#" class="modal__form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*">
-				<input type="text" class="input modal__input" placeholder="Phone Number*">
-				<textarea cols="30" rows="10" class="modal__message" placeholder="Message"></textarea>
-				<button class="button modal__button" type="submit">Send</button>
-				<span class="modal__info">* Required Fields</span>
-			</form>
-		</div>
-		<!-- /modal__dialog -->
-	</div>
-	<!-- /modal -->
-	<script src="./js/jquery-3.6.4.min.js"></script>
+
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>

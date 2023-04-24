@@ -1,4 +1,5 @@
-const hotelSwiper = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+	const hotelSwiper = new Swiper('.hotel-slider', {
   loop: true,
   // Navigation arrows
   navigation: {
@@ -18,8 +19,33 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 });
 
 
-var menuBottom  = document.querySelector(".menu-button");
-menuBottom.addEventListener('click', function() {
-	console.log('клик по кнопке');
-	document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--activ');
-})
+var menuBottom  = $(".menu-button");
+menuBottom.on('click', function() {
+	$(".navbar-bottom").toggleClass('navbar-bottom--activ');
+});
+
+var modalButton = $ ("[data-toggle=modal]");
+var closeModalButton = $ (".modal__close");
+modalButton.on('click', openModal);
+closeModalButton.on('click', closeModal);
+
+function openModal(){
+	var targetModal = $(this).attr("data-href");
+	$(targetModal).find(".modal__overlay").addClass("modal__overlay--active");
+	$(targetModal).find(".modal__dialog").addClass("modal__dialog--active");
+	var modalOverlay = $(".modal__overlay");
+	var modalDialog = $(".modal__dialog");
+
+	modalOverlay.addClass("modal__overlay--active");
+	modalDialog.addClass("modal__dialog--active");
+}
+
+function closeModal(event){
+	event.preventDefault();
+	var modalOverlay = $(".modal__overlay");
+	var modalDialog = $(".modal__dialog");
+	modalOverlay.removeClass("modal__overlay--active");
+	modalDialog.removeClass("modal__dialog--active");
+}
+
+});
