@@ -12,6 +12,10 @@
 		rel="stylesheet" />
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery-3.6.4.min.js" defer></script>
+	<script src="./js/swiper-bundle.min.js" defer></script>
+	<script src="./js/jquery.validate.min.js" defer></script>
+	<script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -417,9 +421,9 @@
 				<!-- /.footer-contact-details -->
 				<div class="footer__contact-form">
 					<h3 class="footer__title">Send us a message</h3>
-					<form action="#" class="footer__form">
-						<input type="text" class="input footer__input" placeholder="Your Full Name*">
-						<input type="text" class="input footer__input" placeholder="Phone Number*">
+					<form action="#" class="footer__form form">
+						<div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required></div>
+						<div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required></div>
 						<textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
 						<button class="button footer__button" type="submit">Send</button>
 						<span class="footer__info">* Required Fields</span>
@@ -438,9 +442,10 @@
 				<img src="./img/close.svg" alt="icon: close">
 			</a>
 			<h3 class="modal__title">Booking</h3>
-			<form action="#" class="modal__form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*">
-				<input type="text" class="input modal__input" placeholder="Phone Number*">
+			<form action="#" class="modal__form form">
+				<input type="text" class="input modal__input" placeholder="Your Full Name*" required name="name">
+				<input type="text" class="input modal__input" placeholder="Phone Number*" required name="phone">
+				<input type="text" class="input modal__input" placeholder="Your Email*" required name="email">
 				<textarea cols="30" rows="10" class="modal__message" placeholder="Message"></textarea>
 				<button class="button modal__button" type="submit">Send</button>
 				<span class="modal__info">* Required Fields</span>
@@ -449,27 +454,8 @@
 		<!-- /modal__dialog -->
 	</div>
 	<!-- /modal -->
-	<div class="modal" id="profile">
-		<div class="modal__overlay"></div>
-		<div class="modal__dialog">
-			<a href="#" class="modal__close">
-				<img src="./img/close.svg" alt="icon: close">
-			</a>
-			<h3 class="modal__title">profile</h3>
-			<form action="#" class="modal__form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*">
-				<input type="text" class="input modal__input" placeholder="Phone Number*">
-				<textarea cols="30" rows="10" class="modal__message" placeholder="Message"></textarea>
-				<button class="button modal__button" type="submit">Send</button>
-				<span class="modal__info">* Required Fields</span>
-			</form>
-		</div>
-		<!-- /modal__dialog -->
-	</div>
+
 	<!-- /modal -->
-	<script src="./js/jquery-3.6.4.min.js"></script>
-	<script src="./js/swiper-bundle.min.js"></script>
-	<script src="./js/main.js"></script>
 </body>
 
 </html>
