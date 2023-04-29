@@ -12,16 +12,18 @@
 		rel="stylesheet" />
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/aos.css">
 	<script src="./js/jquery-3.6.4.min.js" defer></script>
 	<script src="./js/swiper-bundle.min.js" defer></script>
 	<script src="./js/jquery.validate.min.js" defer></script>
 	<script src="./js/main.js" defer></script>
+	<script src="./js/aos.js" defer></script>
 </head>
 
 <body>
 	<header class="navbar navbar--mobile_fixed">
 		<div class="container">
-			<div class="navbar-top">
+			<div class="navbar-top" data-aos="fade-down">
 				<a href="#" class="logo">
 					<img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
 				</a>
@@ -45,7 +47,7 @@
 			<!-- /.navbar-top -->
 		</div>
 		<!-- /.container -->
-		<div class="navbar-bottom">
+		<div class="navbar-bottom" data-aos="fade-right">
 			<div class="container">
 				<nav class="navbar-menu">
 					<li class="navbar-menu__item navbar-menu__item--mobile_activ">
@@ -91,7 +93,7 @@
 		</div>
 	</header>
 	<!-- /.header -->
-	<nav class="nav-breadcrumb">
+	<nav class="nav-breadcrumb" data-aos="fade-left">
 		<div class="container">
 			<ul class="breadcrumb-list">
 				<li class="breadcrumb-list__item">
@@ -113,7 +115,7 @@
 	<section class="hotel">
 		<div class="container">
 			<div class="hotel-info">
-				<div class="hotel-info__text">
+				<div class="hotel-info__text" data-aos="zoom-in">
 					<div class="hotel-wrapper">
 						<div class="stars">
 							<img src="./img/Star.svg" alt="star" class="star">
@@ -129,7 +131,7 @@
 						Child Stays Free</p>
 				</div>
 				<!-- /.hotel-info__text -->
-				<div data-toggle="modal" class="rating hotel-info__rating">
+				<div data-toggle="modal" class="rating hotel-info__rating" data-aos="flip-up">
 					<span class="rateng__text">User Rattings</span>
 					<span class="rateng__counter">4.5/5</span>
 				</div>
@@ -138,7 +140,7 @@
 			<!-- hotel-info -->
 			<div class="hotel-grid">
 				<!-- Slider main container -->
-				<div class="swiper hotel-slider hotel__slider">
+				<div class="swiper hotel-slider hotel__slider" data-aos="flip-left">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Slides -->
@@ -155,7 +157,7 @@
 					<button class="hotel-slider__button hotel-slider__button--next"></button>
 				</div>
 				<!-- /.hotel-slider -->
-				<div class="hotel-right">
+				<div class="hotel-right" data-aos="flip-left">
 					<div class="booking">
 						<div class="booking__info">
 							<div class="booking__price">
@@ -164,7 +166,7 @@
 								<span class="booking__per-room">per room / night</span>
 							</div>
 							<!-- price -->
-							<div class="booking__room">
+							<div class="booking__room" data-aos="flip-left">
 								<div class="booking__text">
 									<img src="./img/person.svg" alt="icon: Guests" class="booking__icon">
 									<span class="booking__description">2 x Guests</span>
@@ -209,7 +211,7 @@
 	</section>
 
 	<section class="newsletter">
-		<div class="newsletter-wrapper">
+		<div class="newsletter-wrapper" data-aos="zoom-in-up">
 			<h2 class="newsletter-title newsletter__title">
 				subscribe to our
 				<span class="newsletter__strong">Newsletter</span>
@@ -224,14 +226,14 @@
 	<!-- /.newsletter -->
 	<section class="reviews">
 		<div class="container">
-			<h2 class="reviews__title">What people think about us</h2>
+			<h2 class="reviews__title" data-aos="zoom-in-up">What people think about us</h2>
 			<!-- Slider main container -->
 			<div class="swiper-container swiper reviews-slider">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
 					<div class="swiper-slide">
-						<div class="reviews-slider__item">
+						<div class="reviews-slider__item" data-aos="zoom-in-up">
 							<div class="reviews-slider__profile">
 								<img src="img/reviews-avatar.jpg" alt="icon: Megan Fox" class="reviews-slider__avatar">
 								<h3 class="reviews-slider__username">Megan Fox</h3>
@@ -306,7 +308,7 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.reviews -->
-	<section class="activiteis">
+	<section class="activiteis" data-aos="zoom-in-up">
 		<div class="container">
 			<h2 class="activiteis__title">Other Activities</h2>
 			<div class="activiteis-wrapper">
